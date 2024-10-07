@@ -2,11 +2,9 @@
 import time
 import re
 import csv
-import random
 from datetime import datetime
 from datetime import datetime, timedelta
 
-import pandas as pd
 from bs4 import BeautifulSoup
 
 from fpdf import FPDF
