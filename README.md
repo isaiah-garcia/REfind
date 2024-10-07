@@ -7,7 +7,9 @@ REfind scrapes, parses, and transforms data from Redfin.com to generate comparat
 ![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
 
 # PDF reports 
-REfind compares each comp to the subject to determine similarities and calculate the property value based on comp averages. Comps most similar to the subject property are colored green. REfind will color certain cells red if the comp was sold over 90 days ago, is missing important information, or the build date is 20 years apart from the subject.
+REfind compares each comp to the subject to determine similarities and calculate the property value based on comp averages. Comps most similar to the subject property are colored green. 
+
+REfind will color certain cells red if the comp was sold over 90 days ago, is missing important information, or the build date is 20 years apart from the subject.
 
 ![REfind PDF example](https://github.com/isaiah-garcia/REfind/blob/main/REfind%20PDF%20sample.png)
 
@@ -16,25 +18,8 @@ REfind compares each comp to the subject to determine similarities and calculate
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+pip install -r requirements.txt
 ```
 
 ## Contributing
