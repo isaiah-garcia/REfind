@@ -1,8 +1,12 @@
 # REfind
+![REfind Logo](https://github.com/isaiah-garcia/REfind/blob/main/refind-logo.png)
 Property Analysis Reports for Investors and Homeowners
 
-# DEMO
-![REfind demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
+![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
+
+![REfind PDF example](https://github.com/isaiah-garcia/REfind/blob/main/REfind%20PDF%20sample.png)
+
+![REfind TSV example](https://github.com/isaiah-garcia/REfind/blob/main/REfind%20tsv%20spreadsheet.png)
 
 ## Installation
 
