@@ -4,7 +4,7 @@
 # demo
 REfind scrapes, parses, and transforms data from Redfin.com to generate comparative analysis reports, providing investment insights in both PDF and CSV/TSV formats.
 
-![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif?raw=true)
+![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
 
 # PDF reports 
 REfind compares each comp to the subject to determine similarities and calculate the property value based on comp averages. Comps most similar to the subject property are colored green. 
