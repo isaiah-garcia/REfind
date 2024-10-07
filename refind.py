@@ -74,8 +74,6 @@ def scrape_redfin(subject_property):
             )
 
     search.send_keys(subject_property, Keys.RETURN)
-
-    # time.sleep(2)
     
     time.sleep(.3)
     driver.execute_script("window.scrollBy(0, 4000);")
@@ -96,31 +94,7 @@ def scrape_redfin(subject_property):
     time.sleep(1)
     driver.execute_script("window.scrollBy(0, -7000);")
     time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, 4000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, 7000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -1000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -2000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -2000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, 3000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -4000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -4000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -1000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -1000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -1000);")
-    # time.sleep(1)
-    # driver.execute_script("window.scrollBy(0, -1000);")
-    # time.sleep(1)
-    driver.save_screenshot('error_screenshot.png')
+    
     WebDriverWait(driver, 3000).until(
         EC.presence_of_element_located((By.CLASS_NAME, 'top-stats'))
     )
@@ -592,8 +566,6 @@ def analyze(subject_data, comp_data):
 
     pdf.add_values(values, col_widths)
     
-    # pdf.image("comp_report_template.png", w=200, x=6, y=80) # find a way to place it perfectly
-    
     pdf.output(f'{property}')
 
     print('Files Created:')
@@ -674,25 +646,11 @@ def main():
 
     subject_data = parse_subject(scraped_data)
     comp_data = parse_comps(scraped_data)
-    analyze(subject_data, comp_data) # TODO split this function into 2 parts
+    analyze(subject_data, comp_data)
 
     runtime = time.time() - start_time
     print(f"Run time: {runtime:.2f} seconds\n")
 
-    # analysis_csv = analyze(subject_data, comp_data)
-    # export_report(analysis_csv)
 
 if __name__ == "__main__":
     main()
-
-
-# subject_property = "2402 Eagle Pt, Lakeway, TX 78734" # subject_property = input(f"\nEnter full address:\n\n")
-    # subject_property = "4664 Encino Ave, Encino, CA 91316" # did not properly get comps
-    # subject_property = "69 E 130th St Unit 2A, New York, NY 10037" #TODO FLAG
-    # subject_property = "178 Coyote Willow Dr, Colorado Springs, CO 80921"
-    # subject_property = "108 Tuscany Springs Gdns Northwest, Calgary, AB T3L 2R5" # TODO FLAG
-    # subject_property = "2506 Smithfield Dr, ORLANDO, FL 32837"
-    # subject_property = "4619 S Indiana Ave, Chicago, IL 60653" # TODO FLAG
-    # subject_property = "2900 Clearwater Rd SW, Atlanta, GA 30331" 
-    # subject_property = "2414 1st Ave #606, Seattle, WA 98121" # TODO FLAG
-    # subject_property = "3931 E Crest Ln, Phoenix, AZ 85050"
