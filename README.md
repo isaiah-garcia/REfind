@@ -1,5 +1,6 @@
 # REfind
 ![REfind Logo](https://github.com/isaiah-garcia/REfind/blob/main/refind-logo.png)
+
 Property Analysis Reports for Investors and Homeowners
 
 ![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
