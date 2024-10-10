@@ -18,6 +18,8 @@ REfind will color certain cells red if the comp was sold over 90 days ago, is mi
 
 ## Installation
 
+Selenium uses a driver, so you will need to download a version of Chromedriver that is compatible with your device and with your current Google Chrome browser version ([download here](https://googlechromelabs.github.io/chrome-for-testing/#stable)). To check your Chrome browser version, you can find it in your settings here: [chrome://settings/help](chrome://settings/help)
+
 ```bash
 pip install -r requirements.txt
 ```
