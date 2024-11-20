@@ -90,7 +90,7 @@ def scrape_redfin(subject_property):
     time.sleep(1)
     driver.execute_script("window.scrollBy(0, 5000);")
     time.sleep(1)
-    driver.execute_script("window.scrollBy(0, -7000);")
+    driver.execute_script("window.scrollBy(0, -1000);")
     time.sleep(1)
     
     WebDriverWait(driver, 3000).until(
@@ -363,14 +363,20 @@ def analyze(subject_data, comp_data):
         sum = 0
         comp_count = 0
         sub_zip = subject_data['Address'].split(',')[-1]
+        sub_zip = ''.join(filter(str.isdigit, sub_zip))[:5] # filter first 5 digits
+
         for comp in comps:
             comp_zip = comp['Address'].split(',')[-1]
+            comp_zip = ''.join(filter(str.isdigit, comp_zip))[:5]
             if comp_zip == sub_zip:
                 sum += comp['Price']
                 comp_count += 1
-        zip_price = int(sum / comp_count)
 
-        return trunc_format(zip_price)
+        if comp_count:
+            zip_price = int(sum / comp_count)
+            return trunc_format(zip_price)
+        else:
+            return 'N/A'
     
     def assign_relevance(comps, subject_data):
         today_dt = datetime.today()
@@ -631,7 +637,7 @@ class PDF(FPDF):
             self.ln()
             
 def main():
-    subject_property = input(f"\nREfind primarily supports single family homes in the US. Multi-family support is in progress.\n\nEnter complete address (address, city, state zip):\n\n")
+    subject_property = input(f"\nRefind primarily supports single family homes in the US. Multi-family support is in progress.\n\nEnter complete address (address, city, state zip):\n\n")
     
     if not validate_address(subject_property):
         print('Invalid address format. Example: 4664 Encino Ave, Encino, CA 91316')
