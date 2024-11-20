@@ -1,23 +1,23 @@
-# REfind
+# Refind
 
-<img src="refind-logo.png" alt="REfind logo" width="800"/>
+<img src="refind-logo.png" alt="Refind logo" width="800"/>
 
 # demo
-REfind scrapes, parses, and transforms data from Redfin.com to generate comparative analysis reports, providing investment insights in both PDF and CSV/TSV formats.
+Refind scrapes, parses, and transforms data from Redfin.com to generate comparative analysis reports, providing investment insights in both PDF and CSV/TSV formats.
 
 ![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
 
 # PDF reports 
-REfind compares each comp to the subject to determine similarities and calculate the property value based on comp averages. Comps most similar to the subject property are colored green. 
+Refind compares each comp to the subject to determine similarities and calculate the property value based on comp averages. Comps most similar to the subject property are colored green. 
 
-REfind will color certain cells red if the comp was sold over 90 days ago, is missing important information, or the build date is 20 years apart from the subject.
+Refind will color certain cells red if the comp was sold over 90 days ago, is missing important information, or the build date is 20 years apart from the subject.
 
-<img src="REfind%20PDF%20sample.png" alt="REfind sample PDF" width="700"/>
+<img src="REfind%20PDF%20sample.png" alt="Refind sample PDF" width="700"/>
 
 
 # TSV reports
 
-<img src="REfind%20tsv%20spreadsheet.png" alt="REfind sample spreadsheet" width="700"/>
+<img src="REfind%20tsv%20spreadsheet.png" alt="Refind sample spreadsheet" width="700"/>
 
 ## Installation
 
