@@ -3,7 +3,7 @@
 <img src="refind-logo.png" alt="Refind logo" width="800"/>
 
 # demo
-Refind scrapes, parses, and transforms data from Redfin.com to generate comparative analysis reports, providing investment insights in both PDF and CSV/TSV formats.
+Refind scrapes, parses, and transforms data from Redfin.com to generate comparative analysis reports, providing investment insights in both PDF and TSV formats.
 
 ![REfind Demo](https://github.com/isaiah-garcia/REfind/blob/main/refind-demo.gif)
 
